@@ -15,7 +15,6 @@ export function getPins(data) {
     mapPinsElement.insertAdjacentElement("beforeend", pinElement);
 
     function createCard() {
-
       if (document.querySelectorAll(".map__card").length > 0) {
         document.querySelectorAll(".map__card").forEach((card) => {
           card.remove();
@@ -61,12 +60,11 @@ export function getPins(data) {
 }
 
 window.addEventListener('keydown', function(evt) {
-    if(evt.code === "Escape" && document.querySelector(".map__card")) {
-        document.querySelector(".map__card").remove();
-    }
+  if(evt.code === "Escape" && document.querySelector(".map__card")) {
+      document.querySelector(".map__card").remove();
+  }
 })
 
 export function removePins() {
   Array.from(document.querySelectorAll('.map__pin')).forEach((pin) => pin.remove())
 }
-
