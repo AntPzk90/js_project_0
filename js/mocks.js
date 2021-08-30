@@ -3,7 +3,7 @@ import {randomInteger} from './helpers.js'
 
 randomInteger(3,8)
 
-let houses = ["flat", "house", "bungalo"];
+let houses = ["flat", "house", "bungalo", "palace"];
 
 let mapPins = [];
 

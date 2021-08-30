@@ -18,13 +18,13 @@
 
     <!-- Карта объявлений -->
     <!-- map--faded -->
-    <section class="map ">
+    <section class="map">
       <!--  -->
-      <button type="button" class="map__pin" style="left: 800px; top: 400px;">
+      <!-- <button type="button" class="map__pin" style="left: 800px; top: 400px;">
         <img src="img/avatars/user07.png" width="40" height="40" draggable="false" alt="Метка объявления">
-      </button>
+      </button> -->
       <!--  -->
-      <article class="map__card popup">
+      <!-- <article class="map__card popup">
         <img src="img/avatars/user01.png" class="popup__avatar" width="70" height="70" alt="Аватар пользователя">
         <button type="button" class="popup__close">Закрыть</button>
         <h3 class="popup__title">Уютное гнездышко для молодоженов</h3>
@@ -43,13 +43,13 @@
         </ul>
         <p class="popup__description">Великолепная квартира-студия в центре Токио. Подходит как туристам, так и
           бизнесменам. Квартира полностью укомплектована и недавно отремонтирована.</p>
-      </article>
+      </article> -->
       <!-- Метки объявлений -->
       <div class="map__pins">
         <div class="map__overlay">
           <h2 class="map__title">Tokio sity</h2>
         </div>
-        <button class="map__pin map__pin--main">
+        <!-- <button class="map__pin map__pin--main">
           <img src="img/muffin-red.svg" width="40" height="44" draggable="false" alt="Метка объявления">
           <svg viewBox="0 0 70 70" width="156" height="156" aria-label="Метка для поиска жилья">
             <defs>
@@ -60,13 +60,13 @@
               <textPath xlink:href="#tophalf" startOffset="0">Move me Move me Move me Move me !!! </textPath>
             </text>
           </svg>
-        </button>
+        </button> -->
       </div>
 
       <!-- Фильтрация объявлений -->
       <div class="map__filters-container">
         <form action="#" class="map__filters" autocomplete="off">
-          <select name="housing-type" id="housingtype" class="map__filter map__top-type">
+          <select name="housing-type" id="housing-type" class="map__filter map__top-type">
             <option value="any" selected>Любой тип жилья</option>
             <option value="palace">Дворец</option>
             <option value="flat">Квартира</option>
@@ -75,8 +75,8 @@
           </select>
           <select name="housing-price" id="housing-price" class="map__filter">
             <option value="any" selected>Любая</option>
-            <option value="middle">10000 - 50000&#x20bd;</option>
             <option value="low">до 10000&#x20bd;</option>
+            <option value="middle">10000 - 50000&#x20bd;</option>
             <option value="high">от 50000&#x20bd;</option>
           </select>
           <select name="housing-rooms" id="housing-rooms" class="map__filter">
@@ -173,7 +173,6 @@
       <button class="error__button">Попробовать снова</button>
     </div>
   </template>
-  <script type="module" src="js/main.js"></script>
 </body>
-
+<script src="./js/main.js" type="module"></script>
 </html>
